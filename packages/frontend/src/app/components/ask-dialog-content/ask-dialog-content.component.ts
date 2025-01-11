@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common'
 import { Component, Inject } from '@angular/core'
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, UntypedFormGroup, Validators } from '@angular/forms'
 import { MatButtonModule } from '@angular/material/button'
-import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog'
+import { MAT_DIALOG_DATA, MatDialogModule, MatDialogRef } from '@angular/material/dialog'
 import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatInput } from '@angular/material/input'
 import { BlogDetails } from 'src/app/interfaces/blogDetails'
@@ -20,7 +20,8 @@ import { InfoCardComponent } from '../info-card/info-card.component'
     MatInput,
     MatFormFieldModule,
     MatButtonModule,
-    InfoCardComponent
+    InfoCardComponent,
+    MatDialogModule
   ],
   templateUrl: './ask-dialog-content.component.html',
   styleUrl: './ask-dialog-content.component.scss'
