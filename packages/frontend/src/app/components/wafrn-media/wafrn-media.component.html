@@ -9,11 +9,11 @@
         [alt]="data().description"
         width="{{ width() }}"
         height="{{ height() }}"
+        class="displayed-image"
         loading="lazy"
         (error)="handleError()"
         [ngClass]="{
-          nsfw: nsfw,
-          'displayed-image': !nsfw
+          nsfw: nsfw
         }"
       />
     }
@@ -23,9 +23,9 @@
         #videoelement
         (play)="showPicture()"
         preload="metadata"
+        class="displayed-image"
         [ngClass]="{
-          nsfw: nsfw,
-          'displayed-image': !nsfw
+          nsfw: nsfw
         }"
         width="{{ width() }}"
         height="{{ height() }}"
